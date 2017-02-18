@@ -36,14 +36,14 @@ build:
     - echo "$FOO"
     - echo "$BOO"
   
-  post_ci:
-    - docker build -t=varshaarun/samplenod:latest .
-    - docker push varshaarun/samplenod:latest 
+ # post_ci:
+#    - docker build -t=varshaarun/samplenod:latest .
+ #   - docker push varshaarun/samplenod:latest 
 
-integrations:
-  hub:
-    - integrationName: docker-varshaarun
-      type: docker 
-      branches:
-        only:
-          - master 
+#integrations:
+ # hub:
+ #   - integrationName: docker-varshaarun
+ #     type: docker 
+  #    branches:
+   #     only:
+     #     - master 
